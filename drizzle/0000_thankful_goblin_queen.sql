@@ -5,7 +5,7 @@ CREATE TABLE "departments" (
 	"description" varchar(255),
 	"created_at" timestamp DEFAULT now() NOT NULL,
 	"updated_at" timestamp DEFAULT now() NOT NULL,
-	CONSTRAINT "depa	DATABASE_URL="postgresql://user:password@your-neon-host/database?sslmode=require&channel_binding=require"rtments_code_unique" UNIQUE("code")
+	CONSTRAINT "departments_code_unique" UNIQUE("code")
 );
 --> statement-breakpoint
 CREATE TABLE "subjects" (
